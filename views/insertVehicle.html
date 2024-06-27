@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Vehicle</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <img id="jsLogo" src="/img/javascript-logo.png" alt="JavaScript" />
+    <h1>Grupo 18</h1>
+    <!--  Action envia la informacion a la ruta especificada-->
+    <form action="/vehicles" method="POST">
+        <label for="type" > Type 
+            <!-- onkeyup="validatingType()" onkeydown="validatingType() -->
+            <input type="text" name="type" id="type"">
+        </label>
+        <label for="distance"> Distance
+            <input type="text" name="distance">
+        </label>
+        <label for="fuelConsumption"> Fuel consumption
+            <input type="text"  name="fuelConsumption" id="fuelConsumption" disabled>
+        </label>
+        <button>+</button>
+    </form>
+    <script src="../app/insertVehicle.js"></script>
+</body>
+</html>
